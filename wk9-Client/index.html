@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 11 - APIs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1>Week 11 - APIs</h1>
+
+    <h2 id="currentDataHeading">Current Popular Movies</h2>
+
+    <main>
+        <form id="searchForm">
+            <label for="searchMovie">
+                <input type="search"  id="searchMovie" placeholder="Fight Club">
+            </label>
+            <button>Search for Movie</button>
+        </form>
+        <article id="featuredMovie">
+            <h2>Featured Movie</h2>
+        </article>
+        <table id="movieTable">
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Date</th>
+                <th>Rating</th>
+                <th>Select</th>
+            </tr>
+        </table>
+        <div class="grid">
+            <button id="getDetails">Get Details for Selected</button>
+            <button id="saveFavorites">Save Selected to Favorites</button>
+        </div>
+    </main>
+
+    <div id="movieDetails" class="detailContainer">
+    </div>
+
+    <h2>Your Favorite Movies</h2>
+    <div id="favoriteMovies" class="detailContainer">
+    </div>
+    <footer>
+        <p class="attribution">&copy;TMDb - Data Source: <a href="https://themoviedb.org">The Movie Db</a></p>
+    </footer>
+    
+</body>
+</html>
